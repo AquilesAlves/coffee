@@ -55,20 +55,29 @@ img {
     width: 100%;
 }
 
+.sessao-conteudo {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
 /* estilização barra de navegação  */
 header {
     background: var(--primary-color);
 }
 
-header .navebar{
+header .navebarra{
     display: flex;
     padding: 20px;
     align-items: center;
     justify-content: space-between;
 }
 
-.navebar .nave-logo .logo-texto {
+.navebarra .nave-logo .logo-texto {
     color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-wight-semibold);
+
 }
 
 .navebarra .nave-menu {
@@ -81,6 +90,7 @@ header .navebar{
     color: var(--white-color);
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
 }
 
 .navebarra .nave-menu .nave-link:hover {
