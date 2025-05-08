@@ -63,6 +63,9 @@ img {
 
 /* estilização barra de navegação  */
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     background: var(--primary-color);
 }
 
@@ -96,5 +99,124 @@ header .navebarra{
 .navebarra .nave-menu .nave-link:hover {
     color: var(--primary-color);
     background: var(--secondary-color);
+
+}
+
+.navebarra :where(#botao-fechar, #botao-abrir){
+    display: none;
+}
+
+
+/*  hero sessao estilo  */
+.hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+
+}
+
+.hero-section .sessao-conteudo{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+
+}
+
+.hero-section .hero-details .titulo{
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitulo{
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-wight-semibold);
+}
+
+.hero-section .hero-details .descricao{
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
+
+.hero-section .hero-details .botoes{
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .botao{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-wight-medium);
+    transition: 0.3s ease;
+}
+
+.hero-section .hero-details .botao:hover, .hero-section .hero-details .contato{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.hero-section .hero-details .contato:hover{
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+.hero-section .hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    :root{
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    .navebarra :where(#botao-fechar, #botao-abrir){
+        display: block;
+        font-size: var(--font-size-l);
+    }
+
+    .navebarra #botao-fechar{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navebarra #botao-abrir{
+        color: var(--white-color);
+    }
+
+    .navebarra .nave-menu{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: var(--white-color); 
+    }
+
+    .navebarra .nave-menu .nave-link{
+        color: var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: var(--font-size-l);
+    }
+
 
 }
