@@ -55,7 +55,7 @@ img {
     width: 100%;
 }
 
-.parte-conteudo {
+.principal-conteudo {
     margin: 0 auto;
     padding: 0 20px;
     max-width: var(--site-max-width);
@@ -114,7 +114,7 @@ header .navebarra{
 
 }
 
-.principal .parte-conteudo{
+.principal .principal-conteudo{
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -173,6 +173,30 @@ header .navebarra{
     max-width: 500px;
     margin-right: 30px;
 }
+
+
+
+/* PARTE SESSÃO */
+
+.sobre{
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.sobre .sobre-conteudo{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre .sobre-imagens .sobre-imagem{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
 
 @media screen and (max-width: 900px) {
     :root{
@@ -235,7 +259,7 @@ header .navebarra{
         font-size: var(--font-size-l);
     }
 
-    .principal .parte-conteudo{
+    .principal .principal-conteudo{
         gap: 50px;
         text-align: center;
         padding: 30px 20px 20px;
