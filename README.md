@@ -1,5 +1,5 @@
 # coffee
 
-<img src="imagens/Screenshot_1.png" alt="Sobre" class="sobre-imagem">
+<img src="imagens/Screenshot_2.png" alt="Sobre" class="sobre-imagem">
 
 
